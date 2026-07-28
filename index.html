@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Filmes</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎬 O que assistir hoje?</h1>
+        <p>Selecione seu gênero favorito e receba as melhores recomendações!</p>
+    </header>
+
+    <section class="form-section">
+        <select id="genre">
+            <option value="all">Todos os Gêneros</option>
+            <option value="action">Ação</option>
+            <option value="comedy">Comédia</option>
+            <option value="scifi">Ficção Científica</option>
+        </select>
+        <button onclick="recomendarFilmes()">Filtrar Gênero</button>
+        <button class="btn-random" onclick="filmeAleatorio()">🎲 Filme Aleatório</button>
+    </section>
+
+    <div class="results-container" id="results">
+        <!-- Os cards de filmes vão aparecer aqui via JavaScript -->
+    </div>
+
+    <footer>
+        <p> &copy; Todos os direitos reservados a André Gabriel.</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
